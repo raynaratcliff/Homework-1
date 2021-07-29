@@ -1,13 +1,16 @@
+/* Universal selector sizing the border around the boxes */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* Universal selector setting the background-color of the body*/
 body {
     background-color: #d9dcd6;
 }
 
+/* Setting the class selectors of header of the web page for font style, the padding around the box, and color */
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -15,16 +18,18 @@ body {
     color: #ffffff;
 }
 
+/* Class selector for header h1 as a block- starts on a new line and takes up the width in the page */ 
 .header h1 {
     display: inline-block;
     font-size: 48px;
 }
-
+/* Class selector for the header h1 but specific text segment element to change the color */
 .header h1 .seo {
     color: #d9dcd6;
 }
 
-.header div {
+/* Class selector for header, padding around the box, set margin, set the element box on the right side of the page, along with style for font style and size */  
+.header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -32,162 +37,215 @@ body {
     font-size: 20px;
 }
 
+/* Class selector for header the list is none; showing no bullets or numbers */
 .header div ul {
     list-style-type: none;
 }
 
+/* Class selector for header lists items horizontally by repsecting the margins on all sides */
 .header div ul li {
     display: inline-block;
     margin-left: 25px;
 }
+   
 
+/* Attribute Selector to the anchor element indicating color and to not be underlined */
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
+/* Type selector P - paragraph to define font size */
 p {
     font-size: 16px;
 }
 
+/* Class selector of images set under hero */
 .hero {
+   
+    /* Setting the height and width */
     height: 800px;
     width: 100%;
+
+    /* Setting the margin at the bottom */
     margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
+   
+    /* Setting the background image, size and the position */
+    background-image: url("../images/digital-marketing-meeting.jpg") ;
     background-size: cover;
     background-position: center;
 }
 
+/* Class selector for image "search-engine-optimization" to be on the left side of the container text will wrap around the image */
 .float-left {
     float: left;
     margin-right: 25px;
 }
 
+/* Class selector for image "search-engine-optimization" to be on the right side of the container text will wrap around the image */
 .float-right {
     float: right;
     margin-left: 25px;
 }
-
+/* Class selector for content to define the width, display horizontally by repsecting the margins on all sides, and margin area */
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
+/* Class selector for benefits */
 .benefits {
+    /* Setting margin and padding around container*/
     margin-right: 20px;
     padding: 20px;
+    
+    /* Setting the selector to move down to clear left and right floats */
     clear: both;
     float: right;
+    
+    /* Setting the width and height % respective to the container */
     width: 20%;
     height: 100%;
+   
+   /*Setting the font type and background color within the container */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
 
+/* Class selector for benefit lead setting margin and color */
 .benefit-lead {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
+/* Class selector for benefit brand setting margin and color */
 .benefit-brand {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
+/* Class selector for benefit cost setting margin and color */
 .benefit-cost {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
+/* Class selector for benefit header lead setting margin and alignment of text */
 .benefit-lead h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
+/* Class selector for benefit header brand setting margin and alignment of text */
 .benefit-brand h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
+/* Class selector for benefit header cost setting margin and alignment of text */
 .benefit-cost h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
+/* Class selector for benefit image lead setting margin, display the container on a new line and takes up the width */
 .benefit-lead img {
     display: block;
     margin: 10px auto;
+    
+    /* Class selector benefit image lead setting the max-width of the image */
     max-width: 150px;
 }
 
+/* Class selector for benefit image brand setting margin, display the container on a new line and takes up the width */
 .benefit-brand img {
     display: block;
     margin: 10px auto;
+   
+    /* Class selector benefit image brand setting the max-width of the image */
     max-width: 150px;
 }
 
+/* Class selector for benefit image cost setting margin, display the container on a new line and takes up the width */
 .benefit-cost img {
     display: block;
     margin: 10px auto;
+
+    /* Class selector benefit image brand setting the max-width of the image */
     max-width: 150px;
 }
 
+/* Class selector search-engine-optimization setting for margin, padding and height */
 .search-engine-optimization {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
+    
+    /* Class selector search-engine-optimization setting for font style, background color and color of text */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
 }
 
+/* Class selector online-reputation-management setting for margin, padding and height */
 .online-reputation-management {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
+    
+    /* Class selector online-reputation-management setting font style, background color and color of text */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
 }
 
+/* Class selector social-medi-marketing setting for margin, padding and height */
 .social-media-marketing {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
+    
+    /* Class selector social-medi-marketing setting font style, background color and color of text */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
 }
 
+/* Class selector search-engine-optimization image max height of the image */
 .search-engine-optimization img {
     max-height: 200px;
 }
 
+/* Class selector online-reputation-management image max height of the image */
 .online-reputation-management img {
     max-height: 200px;
 }
 
+/* Class selector social-media-marketing image max height of the image */
 .social-media-marketing img {
     max-height: 200px;
 }
 
+/* Class selector search-engine-optimization h2 for margin and font size */
 .search-engine-optimization h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
+/* Class selector online-reputation-management h2 for margin and font size */
 .online-reputation-management h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
+/* Class selector social-media-marketing h2 for margin and font size */
 .social-media-marketing h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
+/* Class selector for footer to set padding around container, clear left and right, font size, and alignment of text */
 .footer {
     padding: 30px;
     clear: both;
@@ -195,6 +253,7 @@ p {
     text-align: center;
 }
 
-.footer h2 {
+/* Class selector for footer h4 defining font size */
+.footer h4 {
     font-size: 20px;
 }
